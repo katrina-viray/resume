@@ -1,11 +1,11 @@
 resume: pdf png
 
 pdf:
-	pdflatex Fernando_Ramirez_Resume.tex
-	open Fernando_Ramirez_Resume.pdf &
+	pdflatex Katrina_Viray_Resume.tex
+	start Katrina_Viray_Resume.pdf &
 	rm -f *.aux *.log *.toc *.blg *.out *.bbl
 
 png:
-	convert -density 300 -trim Fernando_Ramirez_Resume.pdf -quality 100 Fernando_Ramirez_Resume.png
-	convert Fernando_Ramirez_Resume.png -background white -flatten Fernando_Ramirez_Resume.png
-	rm -f Fernando_Ramirez_Resume-*.png
+	convert -density 300 -trim Katrina_Viray_Resume.pdf -quality 100 Katrina_Viray_Resume.png
+	convert Katrina_Viray_Resume.png -background white -flatten Katrina_Viray_Resume.png
+	rm -f Katrina_Viray_Resume-*.png
